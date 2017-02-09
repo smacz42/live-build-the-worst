@@ -1,0 +1,25 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Iceweasel-IWT99X.desktop
+x-scheme-handler/https=userapp-Iceweasel-IWT99X.desktop
+x-scheme-handler/ftp=userapp-Iceweasel-IWT99X.desktop
+x-scheme-handler/chrome=userapp-Iceweasel-IWT99X.desktop
+text/html=userapp-Iceweasel-IWT99X.desktop
+application/x-extension-htm=userapp-Iceweasel-IWT99X.desktop
+application/x-extension-html=userapp-Iceweasel-IWT99X.desktop
+application/x-extension-shtml=userapp-Iceweasel-IWT99X.desktop
+application/xhtml+xml=userapp-Iceweasel-IWT99X.desktop
+application/x-extension-xhtml=userapp-Iceweasel-IWT99X.desktop
+application/x-extension-xht=userapp-Iceweasel-IWT99X.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Iceweasel-IWT99X.desktop;
+x-scheme-handler/https=userapp-Iceweasel-IWT99X.desktop;
+x-scheme-handler/ftp=userapp-Iceweasel-IWT99X.desktop;
+x-scheme-handler/chrome=userapp-Iceweasel-IWT99X.desktop;
+text/html=userapp-Iceweasel-IWT99X.desktop;
+application/x-extension-htm=userapp-Iceweasel-IWT99X.desktop;
+application/x-extension-html=userapp-Iceweasel-IWT99X.desktop;
+application/x-extension-shtml=userapp-Iceweasel-IWT99X.desktop;
+application/xhtml+xml=userapp-Iceweasel-IWT99X.desktop;
+application/x-extension-xhtml=userapp-Iceweasel-IWT99X.desktop;
+application/x-extension-xht=userapp-Iceweasel-IWT99X.desktop;

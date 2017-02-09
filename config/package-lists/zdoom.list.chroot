@@ -1,0 +1,12 @@
+zlib1g-dev
+libsdl2-dev
+libjpeg-dev
+nasm
+libbz2-dev
+libgtk-3-dev
+libfluidsynth-dev
+libgme-dev
+libopenal-dev
+libmpg123-dev
+libsndfile1-dev
+timidity

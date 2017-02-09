@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo rmmod b43 b44 b43 legacy ssd brcmsmac bcma wl
+sudo modprobe wl

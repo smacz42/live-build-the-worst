@@ -1,0 +1,11 @@
+#!/bin/bash
+
+volti_config='/home/ghost/.config/volti/config'
+
+change_index () {
+
+    sed -i 's/card_index = 0/card_index = 1/' < $volti_config > $volti_config
+    volti
+}
+
+volti || change_index

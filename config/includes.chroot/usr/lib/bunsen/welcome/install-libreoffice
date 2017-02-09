@@ -1,0 +1,3 @@
+installPage $"LibreOffice Suite" \
+    $"By default, BunsenLabs comes with LibreOffice Writer only. Would you like to install the full LibreOffice suite?" \
+    'bunsen-meta-libreoffice'

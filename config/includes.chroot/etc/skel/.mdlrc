@@ -1,0 +1,3 @@
+rules "~MD001,~MD002,~MD013,~MD014,~MD025"
+
+style "ordered"

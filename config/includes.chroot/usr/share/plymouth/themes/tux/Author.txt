@@ -1,0 +1,28 @@
+Modified by: Fobnny
+e-mail: fobnny@gmail.com
+
+Original althor: pegellinux
+e-mail :ppigel@gmail.com
+__________________________________________________
+
+how tu use:
+
+Copy the extracted folder to /lib/plymouth/themes
+
+Open your terminal and run this commands:
+
+$ sudo su OR $ su
+
+Enter you password and press ENTER
+
+# update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/TuX/TuX.plymouth 100
+
+# update-alternatives --config default.plymouth
+
+Chose Tux from list and press ENTER
+
+# update-initramfs -u
+
+ENJOY!
+_____________________________________________________
+

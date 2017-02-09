@@ -1,0 +1,15 @@
+* menu to tmuxinator
+* auto-gen tmuxinator
+* lightdm themeing and autologin
+* bl-exit
+* tint2 fdpowermon, nm-applet, etc.
+* pipemenues
+        * network -> ssh
+        * recent files
+        * preferences -> conky
+        * install bl-kb for keybindings list
+* remove dmenu menu entry
+* fix "enter" on tmux for vi mode
+    * gives an error hex box 
+    * displays a 'q'
+    * doubles the top line every '\r'

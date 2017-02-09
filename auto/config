@@ -1,0 +1,38 @@
+#!/bin/sh
+
+set -e
+
+lb_pwd="${PWD}"
+
+lb config noauto\
+    --archive-areas "main contrib non-free" \
+    --bootappend-live "boot=live hostname=the-worst username=ghost" \
+    --iso-volume "the_worst" \
+    --iso-publisher "smacz; https://hobbithole.blue; andrewcz@neomailbox.net" \
+    --iso-application "the_worst" \
+    --net-root-server "" \
+    "${@}"
+
+# isolinux
+rsync -av --ignore-existing /usr/share/live/build/bootloaders/isolinux/ "${PWD}"/config/bootloaders/isolinux
+
+rm -rf "${PWD}"/config/bootloaders/isolinux/splash.svg
+
+# Zdoom
+sudo apt-get install build-essential zlib1g-dev libsdl2-dev libjpeg-dev \
+    nasm tar libbz2-dev libgtk-3-dev cmake git libfluidsynth-dev libgme-dev \
+    libopenal-dev libmpg123-dev libsndfile1-dev timidity
+
+git clone git://github.com/rheit/zdoom.git &&
+    mkdir -pv zdoom/build
+cd zdoom || exit && git checkout 2.8.1
+cd build || exit
+
+# uncomment for other than 32 bit, and put other flags in
+#a='' && [ "$(uname -m)" = x86_64 ] && a=64
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make
+
+cp ./* "${lb_pwd}/config/includes.chroot/opt/zdoom"
+
+cd "${lb_pwd}"

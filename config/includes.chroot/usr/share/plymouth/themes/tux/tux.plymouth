@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=tux
+Description=tux
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/tux
+ScriptFile=/usr/share/plymouth/themes/tux/tux.script

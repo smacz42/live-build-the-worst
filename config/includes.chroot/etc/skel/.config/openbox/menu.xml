@@ -1,0 +1,3657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+    <menu id="root-menu" label="Openbox 3">
+        <item label='Update &amp; Upgrade'>
+            <action name="Execute">
+                <command>
+                    bl-update_and_upgrade
+                </command>
+            </action>
+        </item>
+        <separator/>
+        <item label="FireFox">
+            <action name="Execute">
+                <command>
+                    firefox-esr
+                </command>
+            </action>
+        </item>
+        <item label="Thunar">
+            <action name="Execute">
+                <command>
+                    bl-file-manager
+                </command>
+            </action>
+        </item>
+        <item label="Gedit">
+            <action name="Execute">
+                <command>
+                    bl-text-editor
+                </command>
+            </action>
+        </item>
+        <item label="KeepassX">
+            <action name="Execute">
+                <command>
+                    keepassx
+                </command>
+            </action>
+        </item>
+        <item label="Screenshooter">
+            <action name="Execute">
+                <command>
+                    xfce4-screenshooter
+                </command>
+            </action>
+        </item>
+        <separator/>
+        <menu id="accessories" label="Accessories">
+			<item label="Run Program">
+				<action name="Execute">
+					<command>
+						gmrun
+					</command>
+				</action>
+			</item>
+			<separator/>
+            <item label="Icedove">
+                <action name="Execute">
+                    <command>
+                        icedove
+                    </command>
+                </action>
+            </item>
+			<item label="Cheese">
+				<action name="Execute">
+					<command>
+						cheese
+					</command>
+				</action>
+			</item>
+            <item label="Electrum">
+                <action name="Execute">
+                    <command>
+                        electrum
+                    </command>
+                </action>
+            </item>
+            <separator/>
+            <item label="Transmission BitTorrent Client">
+                <action name="Execute">
+                    <command>
+                        transmission-gtk
+                    </command>
+                </action>
+            </item>
+            <item label="Pidgin">
+                <action name="Execute">
+                    <command>
+                        pidgin
+                    </command>
+                </action>
+            </item>
+            <item label="HexChat IRC Client">
+                <action name="Execute">
+                    <command>
+                        hexchat
+                    </command>
+                </action>
+            </item>
+			<separator/>
+			<item label="Terminator">
+				<action name="Execute">
+					<command>
+						x-terminal-emulator
+					</command>
+				</action>
+			</item>
+            <item label="Task Manager (htop)">
+                <action name="Execute">
+                    <command>
+                        x-terminal-emulator -T 'htop task manager' -e htop
+                    </command>
+                </action>
+            </item>
+			<item label="Seahorse">
+				<action name="Execute">
+					<command>
+						seahorse
+					</command>
+				</action>
+			</item>
+            <item label="Catfish File Search">
+                <action name="Execute">
+                    <command>
+                        catfish
+                    </command>
+                </action>
+            </item>
+            <item label="Archive Manager">
+                <action name="Execute">
+                    <command>
+                        file-roller
+                    </command>
+                </action>
+            </item>
+			<item label="BleachBit">
+				<action name="Execute">
+					<command>
+						gksudo bleachbit
+					</command>
+				</action>
+			</item>
+            <item label="ClamAV">
+                <action name="Execute">
+                    <command>
+                        clamtk
+                    </command>
+                </action>
+            </item>
+            <separator/>
+            <item label="Wireshark">
+                <action name="Execute">
+                    <command>
+                        wireshark
+                    </command>
+                </action>
+            </item>
+            <separator/>
+            <menu execute="bl-dropbox-pipemenu" id="dropbox" label="Dropbox"/>
+            <item label="Skype">
+                <action name="Execute">
+                    <command>
+                        skype
+                    </command>
+                </action>
+            </item>
+            <separator/>
+            <item label='Send to Tray'>
+                <action name="Execute">
+                    <command>
+                        alltray
+                    </command>
+                </action>
+            </item>
+        </menu>
+        <menu execute="bl-graphics-pipemenu" id="bl-graphics-pipemenu" label="Graphics"/>
+        <menu execute="bl-multimedia-pipemenu" id="bl-multimedia-pipemenu" label="Multimedia"/>
+        <menu id="network" label="Network">
+            <item label="AirVPN">
+                <action name="Execute">
+                    <command>
+                        airvpn
+                    </command>
+                </action>
+            </item>
+            <separator/>
+            <menu execute="bl-x-www-browser-pipemenu" id="wwwbrowsers" label="WWW Browsers"/>
+            <item label="Filezilla FTP Client">
+                <action name="Execute">
+                    <command>
+                        filezilla
+                    </command>
+                </action>
+            </item>
+            <item label="Remote Filesystems">
+                <action name="Execute">
+                    <command>
+                        gigolo
+                    </command>
+                </action>
+            </item>
+            <menu execute="bl-remote-desktop-pipemenu" id="remotedesktop" label="Remote Desktop"/>
+            <menu execute="bl-sshconfig-pipemenu" id="sshconfig" label="SSH"/>
+        </menu>
+        <menu id="office" label="Office">
+            <menu id="libreoffice" label="LibreOffice" execute="bl-libreoffice-pipemenu" />
+            <item label="GnuCash">
+                <action name="Execute">
+                    <command>
+                        gnucash
+                    </command>
+                </action>
+            </item>
+            <item label="Calculator">
+                <action name="Execute">
+                    <command>
+                        galculator
+                    </command>
+                </action>
+            </item>
+            <item label="Evince PDF Viewer">
+                <action name="Execute">
+                    <command>
+                        evince
+                    </command>
+                </action>
+            </item>
+            <item label="Gnumeric Spreadsheet">
+                <action name="Execute">
+                    <command>
+                        gnumeric
+                    </command>
+                </action>
+            </item>
+        </menu>
+	<separator/>
+	<menu id="Kali Tools" label="Kali Tools">
+            <menu id="Information Gathering" label="Information Gathering">
+                <menu id="DNS Analysis" label="DNS Analysis">
+                    <item label="dnsenum">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnsenum -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dnsmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnsmap;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dnsrecon">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnsrecon -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dnstracer">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnstracer;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dnswalk">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnswalk --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fierce">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fierce -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="urlcrazy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "urlcrazy -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="IDS/IPS Identification" label="IDS/IPS Identification">
+                    <item label="fragroute">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fragroute -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fragrouter">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fragrouter -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ftest">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ftest;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="lbd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "lbd;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wafw00f">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wafw00f -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Live Host Identification" label="Live Host Identification">
+                    <item label="arping">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "arping;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cdpsnarf">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cdpsnarf -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fping">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fping -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hping3">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hping3 -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="masscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "masscan --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="miranda">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "miranda -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ncat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ncat -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="thcping6">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "thcping6;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="unicornscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "us -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wol-e">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wol-e -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="xprobe2">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "xprobe2 -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Network &amp; Port Scanners" label="Network &amp; Port Scanners">
+                    <item label="masscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "masscan --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nmap;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="unicornscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "us -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zenmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zenmap;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="OSINT Analysis" label="OSINT Analysis">
+                    <item label="automater">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "automater -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="casefile">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "casefile"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="creepy">
+                        <action name="Execute">
+                            <command>
+                                creepy
+                            </command>
+                        </action>
+                    </item>
+                    <item label="maltegoce">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "maltegoce"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="theharvester">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "theharvester;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="twofi">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "twofi -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="urlcrazy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "urlcrazy -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Route Analysis" label="Route Analysis">
+                    <item label="0trace">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "0trace.sh;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="intrace">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "intrace;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="irpas-ass">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ass -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="irpass-cdp">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cdp;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="netdiscover">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "netdiscover -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="netmask">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "netmask -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="SMB Analysis" label="SMB Analysis">
+                    <item label="acccheck">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "acccheck;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="enum4linux">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "enum4linux;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nbtscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nbtscan -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="smbmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "smbmap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="SMTP Analysis" label="SMTP Analysis">
+                    <item label="smtp-user-enum">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "smtp-user-enum -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="swaks">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "swaks --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="SNMP Analysis" label="SNMP Analysis">
+                    <item label="braa">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "braa -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="onesixtyone">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "onesixtyone;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="snmp-check">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "snmp-check -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="SSL Analysis" label="SSL Analysis">
+                    <item label="sslcaudit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sslcaudit -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ssldump">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ssldump -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sslh">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sslh -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sslscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sslscan;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sslyze">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sslyze -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="tlssled">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "tlssled;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                    <item label="dmitry">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dmitry;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dnmap-client">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnmap_client;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dnmap-server">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnmap_server;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ike-scan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e bash -c "tmuxinator start test"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="maltegoce">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "maltegoce"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="netdiscover">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "netdiscover -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nmap;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="p0f">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "p0f -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="recon-ng">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "recon-ng"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sparta">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sparta;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zenmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zenmap;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Vulnerability Analysis" label="Vulnerability Analysis">
+                <menu id="Cisco Tools" label="Cisco Tools">
+                    <item label="cisco-auditing-tool">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "CAT;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cisco-global-exploiter">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cge.pl;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cisco-ocs">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cisco-ocs;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cisco-torch">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cisco-torch;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="copy-router-config">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "copy-router-config.pl;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="merge-router-config">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "merge-router-config.pl;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="yersinia">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "yersinia --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Fuzzing Tools" label="Fuzzing Tools">
+                    <item label="bed">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "bed;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ohrwurm">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ohrwurm;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="powerfuzzer">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "powerfuzzer;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sfuzz">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sfuzz -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="siparmyknife">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "siparmyknife;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="spike-generic_chunked">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "generic_chunked;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="spike-generic_listen_tcp">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "generic_listen_tcp;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="spike-generic_send_tcp">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "generic_send_tcp;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="spike-generic_send_udp">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "generic_send_udp;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Stress Testing" label="Stress Testing">
+                    <item label="dhcpig">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pig.py -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="iaxflood">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "iaxflood;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="inviteflood">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "inviteflood -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="siege">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "siege -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="t50">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "t50 --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="thc-ssl-dos">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "thc-ssl-dos -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="VoIP Tools" label="VoIP Tools">
+                    <item label="enumiax">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "enumiax -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="iaxflood">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "iaxflood;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="inviteflood">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "inviteflood -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ohrwurm">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ohrwurm;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="protos-sip">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "protos-sip -help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rtpbreak">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rtpbreak -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rtpflood">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rtpflood;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rtpinsertsound">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rtpinsertsound -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rtpmixsound">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rtpmixsound -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sctpscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sctpscan;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="siparmyknife">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "siparmyknife;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sipp">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sipp -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sipsak">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sipsak -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="svcrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "svcrack -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="svcrash">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "svcrash -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="svmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "svmap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="svreport">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "svreport -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="svwar">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "svwar -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="voiphopper">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "voiphopper;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="golismero">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "golismero -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="lynis">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "lynis -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nikto">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nikto -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nmap;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sparta">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sparta;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="unix-privesc-check">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "unix-privesc-check;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Web Application Analysis" label="Web Application Analysis">
+                <menu id="CMS &amp; Framework Identification" label="CMS &amp; Framework Identification">
+                    <item label="blindelephant">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "BlindElephant.py -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="clusterd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "clusterd -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jboss-autopwn-linux">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jboss-linux;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jboss-autopwn-win">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jboss-win;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="joomscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "joomscan;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="plecost">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "plecost -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ua-tester">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ua-tester;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wpscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wpscan --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Web Application Proxies" label="Web Application Proxies">
+                    <item label="burpsuite">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "java -jar /usr/bin/burpsuite"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="paros">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "paros"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="proxystrike">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "proxystrike"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Web Crawlers &amp; Directory Bruteforce" label="Web Crawlers &amp; Directory Bruteforce">
+                    <item label="apache-users">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "apache-users;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cutycapt">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cutycapt --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dirb">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dirb;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dirbuster">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dirbuster;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="uniscan-gui">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "uniscan-gui"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wfuzz">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wfuzz;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Web Vulnerability Scanners" label="Web Vulnerability Scanners">
+                    <item label="cadaver">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cadaver;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="clusterd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "clusterd -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="davtest">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "davtest;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="deblaze">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "deblaze.py -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fimap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fimap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                    <item label="golismero">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "golismero -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="grabber">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "grabber -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jboss-autopwn-linux">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jboss-linux;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jboss-autopwn-win">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jboss-win;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="joomscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "joomscan;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jsql">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jsql"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nikto">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nikto -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="padbuster">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "padbuster;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="powerfuzzer">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "powerfuzzer;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="skipfish">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "skipfish -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wapiti">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wapiti -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="whatweb">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "whatweb -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wpscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wpscan --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="xsser">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "xsser -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                    <item label="burpsuite">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "java -jar /usr/bin/burpsuite"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="commix">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "commix;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="httrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "httrack -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="owasp-zap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zaproxy"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="paros">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "paros"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="skipfish">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "skipfish -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sqlmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sqlmap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="w3af">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "w3af"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="webscarab">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "webscarab"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wpscan">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wpscan --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Database Assessment" label="Database Assessment">
+                    <item label="SQLite database browser">
+                        <action name="Execute">
+                            <command>
+                                sqlitebrowser
+                            </command>
+                        </action>
+                    </item>
+                    <item label="bbqsql">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "bbqsql;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hexorbase">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hexorbase"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jsql">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jsql"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mdb-sql">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mdb-sql -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="oscanner">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "oscanner;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sidguesser">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sidguess;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sqldict">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sqldict"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sqlmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sqlmap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sqlninja">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sqlninja;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sqlsus">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sqlsus -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="tnscmd10g">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "tnscmd10g;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Password Attacks" label="Password Attacks">
+                <menu id="Offline Attacks" label="Offline Attacks">
+                    <item label="cachedump">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cachedump -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="chntpw">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "chntpw -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cmospwd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cmospwd;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fcrackzip">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fcrackzip --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hash-identifier">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hash-identifier;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hashcat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hashcat --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hashid">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hashid -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="johnny">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "johnny;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="lsadump">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "lsadump -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="multiforcer">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "multiforcer --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ophcrack-cli">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ophcrack-cli;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pwdump">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pwdump -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rainbowcrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rcrack;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rcracki_mt">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rcracki_mt;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="samdump2">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "samdump2 -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sipcrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sipcrack -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sucrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "man sucrack;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="truecrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "truecrack -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Online Attacks" label="Online Attacks">
+                    <item label="acccheck">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "acccheck;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cisco-auditing-tool">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "CAT;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="findmyhash">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "findmyhash;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hydra">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hydra -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hydra-gtk">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "xhydra"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="keimpx">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "keimpx -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="onesixtyone">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "onesixtyone;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="patator">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "patator -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="thc-pptp-bruter">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "thc-pptp-bruter;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Passing the Hash tools" label="Passing the Hash tools">
+                    <item label="mimikatz">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/mimikatz/ && ls -l;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-curl">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-curl -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-net">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-net help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-openchangeclient">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-openchangeclient --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-rpcclient">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-rpcclient -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-smbclient">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-smbclient -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-smbget">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-smbget --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-sqsh">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-sqsh --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-winexe">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-winexe -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-wmic">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-wmic -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pth-wmis">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pth-wmis -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="smbmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "smbmap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Password Profiling &amp; Wordlists" label="Password Profiling &amp; Wordlists">
+                    <item label="cewl">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cewl --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="crunch">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "crunch;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dictstat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dictstat -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="maskgen">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "maskgen -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="policygen">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "policygen -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rsmangler">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rsmangler -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wordlists">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/wordlists && ls -l;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                    <item label="cewl">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cewl --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="crunch">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "crunch;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hashcat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hashcat --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="john">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "john;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="johnny">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "johnny;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="medusa">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "medusa -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ncrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ncrack -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ophcrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ophcrack"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pyrit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pyrit -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rainbowcrack">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rcrack;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rcracki_mt">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rcracki_mt;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wordlists">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/wordlists && ls -l;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Wireless Attacks" label="Wireless Attacks">
+                <menu id="802.11 Wireless Tools" label="802.11 Wireless Tools">
+                    <item label="asleap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "asleap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="bully">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "bully;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cowpatty">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cowpatty;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="eapmd5pass">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "eapmd5pass -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fern wifi cracker">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fern-wifi-cracker"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="giskismet">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "giskismet -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wifi-honey">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wifi-honey -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wifiarp">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wifiarp -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wifidns">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wifidns -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wifiping">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wifiping -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wifitap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wifitap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Bluetooth Tools" label="Bluetooth Tools">
+                    <item label="bluelog">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "bluelog -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="blueranger">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "blueranger.sh;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="bluesnarfer">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "bluesnarfer;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="btscanner">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "btscanner -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="redfang">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fang -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="spooftooph">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "spooftooph -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Other Wireless Tools" label="Other Wireless Tools">
+                    <item label="hackrf_info">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hackrf_info -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zbassocflood">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zbassocflood -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zbdsniff">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zbdsniff;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zbdump">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zbdump -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zbfind">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zbfind"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zbgoodfind">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zbgoodfind -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zbreplay">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zbreplay -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="zbstumbler">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "zbstumbler -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="RFID &amp; NFC Tools" label="RFID &amp; NFC Tools">
+                    <item label="mfcuk">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mfcuk -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mfoc">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mfoc -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mfterm">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mfterm -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mifare-classic-format">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mifare-classic-format -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nfc-list">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nfc-list -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nfc-mfclassic">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nfc-mfclassic -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Software Defined Radio" label="Software Defined Radio">
+                    <item label="chirp">
+                        <action name="Execute">
+                            <command>
+                                chirpw
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                    <item label="aircrack-ng">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "aircrack-ng --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="chirp">
+                        <action name="Execute">
+                            <command>
+                                chirpw
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cowpatty">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cowpatty;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fern wifi cracker">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fern-wifi-cracker"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ghost phisher">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ghost-phisher"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="giskismet">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "giskismet -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="kismet">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "kismet -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mdk3">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mdk3 --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mfoc">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mfoc -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mfterm">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mfterm -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pixiewps">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pixiewps -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="reaver">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "reaver -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wifite">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wifite --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Reverse Engineering" label="Reverse Engineering">
+                    <item label="NASM shell">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/metasploit-framework/tools && ./nasm_shell.rb;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="apktool">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "apktool;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="clang">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "clang --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="clang++">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "clang++ --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dex2jar">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "d2j-dex2jar -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="edb-debugger">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "edb;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="flasm">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "flasm;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jad">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jad;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="javasnoop">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "javasnoop"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ollydbg">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ollydbg"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="radare2">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "radare2 -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Exploitation Tools" label="Exploitation Tools">
+                    <item label="armitage">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "armitage;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="beef xss framework">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "beef-xss;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="metasploit framework">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl start postgresql && msfdb init & msfconsole;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="msf payload creator">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "msfpc;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="searchsploit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "searchsploit;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="social engineering toolkit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "setoolkit;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sqlmap">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sqlmap -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="termineter">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "termineter -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Sniffing &amp; Spoofing" label="Sniffing &amp; Spoofing">
+                <menu id="Network Sniffers" label="Network Sniffers">
+                    <item label="darkstat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "darkstat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dnschef">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnschef -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dsniff">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dsniff -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hexinject">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hexinject -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="netsniff-ng">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "netsniff-ng -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nfspy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nfspy -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sslsniff">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sslsniff;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="tcpflow">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "tcpflow -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Spoofing and MITM" label="Spoofing and MITM">
+                    <item label="dnschef">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dnschef -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fiked">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fiked -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nfspy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "nfspy -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rebind">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rebind;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sniffjoke">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sniffjoke --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sslsplit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sslsplit -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sslstrip">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sslstrip -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="tcpreplay">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "tcpreplay -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wifi-honey">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wifi-honey -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="yersinia">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "yersinia --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="bdfproxy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "bdfproxy;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="driftnet">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "driftnet -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ettercap-graphical">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ettercap -G"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hamster">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hamster;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="macchanger">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "macchanger -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mitmproxy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mitmproxy -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="netsniff-ng">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "netsniff-ng -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="responder">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "responder -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="wireshark">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "wireshark"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Post Exploitation" label="Post Exploitation">
+                <menu id="OS Backdoors" label="OS Backdoors">
+                    <item label="cymothoa">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cymothoa -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dbd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dbd -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="intersect">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "intersect;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="powersploit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/powersploit/ && ls -l;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sbd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sbd -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="u3-pwn">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "u3-pwn;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Tunneling &amp; Exfiltration" label="Tunneling &amp; Exfiltration">
+                    <item label="dbd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dbd -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dns2tcpc">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dns2tcpc;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dns2tcpd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dns2tcpd;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="exe2hex">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "exe2hex;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="iodine">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "iodine-client-start -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="miredo">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "miredo -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="proxychains">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "proxychains;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="proxytunnel">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "proxytunnel -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ptunnel">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ptunnel -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pwnat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pwnat -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sslh">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sslh -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="stunnel4">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "stunnel4 -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="udptunnel">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "udptunnel -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Web Backdoors" label="Web Backdoors">
+                    <item label="laudanum">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ls -l /usr/share/laudanum;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nishang">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/nishang && ls -l;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="webacoo">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "webacoo -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="weevely">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "weevely;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                    <item label="backdoor-factory">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "backdoor-factory -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                    <item label="bdfproxy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "bdfproxy;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="exe2hex">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "exe2hex;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="intersect">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "intersect;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mimikatz">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/mimikatz/ && ls -l;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="nishang">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/nishang && ls -l;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="powersploit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cd /usr/share/powersploit/ && ls -l;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="proxychains">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "proxychains;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="weevely">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "weevely;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Forensics" label="Forensics">
+                <menu id="Digital Forensics" label="Digital Forensics">
+                    <item label="dc3dd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dc3dd --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dcfldd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dcfldd --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="extundelete">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "extundelete --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="missidentify">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "missidentify -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pdgmail">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pdgmail -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="readpst">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "readpst -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="reglookup">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "reglookup;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="regripper">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "regripper"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="vinetto">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "vinetto -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Forensic Carving Tools" label="Forensic Carving Tools">
+                    <item label="foremost">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "foremost -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="magicrescue">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "magicrescue;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pasco">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pasco;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pev">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pev -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="recoverjpeg">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "recoverjpeg -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rifiuti">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rifiuti;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="rifiuti2">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "rifiuti2 -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="safecopy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "safecopy -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="scalpel">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "scalpel -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="scrounge-ntfs">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "scrounge-ntfs -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Forensic Imaging Tools" label="Forensic Imaging Tools">
+                    <item label="affcat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "affcat -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dc3dd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dc3dd --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dcfldd">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dcfldd --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ddrescue">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dd_rescue -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ewfacquire">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ewfacquire -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="guymager">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "guymager"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="PDF Forensics Tools" label="PDF Forensics Tools">
+                    <item label="pdf-parser">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pdf-parser -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pdfid">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pdfid -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="peepdf">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "peepdf -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Sleuth Kit Suite" label="Sleuth Kit Suite">
+                    <item label="autopsy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "autopsy;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="blkcalc">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "blkcalc;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="blkcat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "blkcat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="blkls">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "blkls;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="blkstat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "blkstat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ffind">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ffind;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fls">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fls;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="fsstat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "fsstat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hfind">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hfind;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="icat-sleuthkit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "icat-sleuthkit;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ifind">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ifind;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ils-sleuthkit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ils-sleuthkit;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="img_cat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "img_cat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="img_stat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "img_stat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="istat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "istat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jcat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jcat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="jls">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "jls;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mactime-sleuthkit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mactime-sleuthkit;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mmcat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mmcat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mmls">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mmls;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="mmstat">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "mmstat;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sigfind">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sigfind;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="sorter">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "sorter;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="srch_strings">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "srch_strings -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="tsk_comparedir">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "tsk_comparedir;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="tsk_gettimes">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "tsk_gettimes -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="tsk_loaddb">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "tsk_loaddb;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="tsk_recover">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "tsk_recover;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                    <item label="autopsy">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "autopsy;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="binwalk">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "binwalk -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="bulk_extractor">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "bulk_extractor -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="chkrootkit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "chkrootkit -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dff">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dff;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dff gui">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "dff -g;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="foremost">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "foremost -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="galleta">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "galleta;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="hashdeep">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "hashdeep -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="volafox">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "volafox;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="volatility">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "vol -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Reporting Tools" label="Reporting Tools">
+                    <item label="casefile">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "casefile"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="cutycapt">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "cutycapt --help;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dradis">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl start dradis; xdg-open https://127.0.0.1:3004"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="faraday IDE">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "python-faraday;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="keepnote">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "keepnote"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="magictree">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "magictree"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="pipal">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "pipal -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="recordmydesktop">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "recordmydesktop -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="Social Engineering Tools" label="Social Engineering Tools">
+                    <item label="backdoor-factory">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "backdoor-factory -h;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="beef xss framework">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "beef-xss;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="ghost phisher">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "ghost-phisher"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="maltegoce">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "maltegoce"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="msf payload creator">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "msfpc;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="social engineering toolkit">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "setoolkit;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="u3-pwn">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "u3-pwn;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+            </menu>
+            <menu id="System Services" label="System Services">
+                <menu id="BeEF" label="BeEF">
+                    <item label="beef start">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl start beef-xss;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="beef stop">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl stop beef-xss;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+                <menu id="Dradis" label="Dradis">
+                    <item label="dradis start">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl start dradis;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dradis stop">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl stop dradis;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="beef start">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl start beef-xss;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="beef stop">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl stop beef-xss;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dradis start">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl start dradis;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                    <item label="dradis stop">
+                        <action name="Execute">
+                            <command>
+                                x-terminal-emulator -e "gksudo systemctl stop dradis;${SHELL:-bash}"
+                            </command>
+                        </action>
+                    </item>
+                </menu>
+	    </menu>
+	</menu>
+        <separator/>
+        <menu execute="bl-places-pipemenu" id="pipe-placesmenu" label="Places"/>
+        <menu execute="bl-recent-files-pipemenu -rl15" id="pipe-recentfilesmenu" label="Recent Files"/>
+        <separator/>
+        <menu id="preferences" label="Preferences">
+            <menu id="obConfig" label="Openbox">
+                <item label="Edit menu.xml">
+                    <action name="Execute">
+                        <command>
+                            bl-text-editor ~/.config/openbox/menu.xml
+                        </command>
+                    </action>
+                </item>
+                <item label="Edit rc.xml">
+                    <action name="Execute">
+                        <command>
+                            bl-text-editor ~/.config/openbox/rc.xml
+                        </command>
+                    </action>
+                </item>
+                <item label="Edit autostart">
+                    <action name="Execute">
+                        <command>
+                            bl-text-editor ~/.config/openbox/autostart
+                        </command>
+                    </action>
+                </item>
+                <separator/>
+                <item label="GUI Menu Editor">
+                    <action name="Execute">
+                        <command>
+                            obmenu
+                        </command>
+                    </action>
+                </item>
+                <item label="GUI Config Tool">
+                    <action name="Execute">
+                        <command>
+                            obconf
+                        </command>
+                    </action>
+                </item>
+                <item label="How to Edit Menu">
+                    <action name="Execute">
+                        <execute>zenity --text-info --title=&quot;How to Edit the Menu&quot; --filename=&quot;/usr/share/bunsen/bunsen-docs/helpfile-menu.txt&quot; --width=900 --height=700</execute>
+                    </action>
+                </item>
+                <separator/>
+                <item label="Reconfigure">
+                    <action name="Reconfigure"/>
+                </item>
+                <item label="Restart">
+                    <action name="Restart"/>
+                </item>
+            </menu>
+            <menu execute="bl-compositor" id="CompositingPipeMenu" label="Compositor"/>
+            <menu execute="bl-conky-pipemenu" id="pipe-conkymenu" label="Conky"/>
+            <menu execute="bl-tint2-pipemenu" id="pipe-tint2menu" label="Tint2"/>
+            <item label="Change Appearance">
+                <action name="Execute">
+                    <command>
+                        lxappearance
+                    </command>
+                </action>
+            </item>
+            <item label="Choose Wallpaper">
+                <action name="Execute">
+                    <command>
+                        nitrogen
+                    </command>
+                </action>
+            </item>
+            <item label="Notifications">
+                <action name="Execute">
+                    <command>xfce4-notifyd-config</command>
+                </action>
+            </item>
+            <item label="Power Management">
+                <action name="Execute">
+                    <command>
+                        xfce4-power-manager-settings
+                    </command>
+                </action>
+            </item>
+            <menu id="dmenuconfig" label="dmenu">
+                <item label="Edit Start-up Script">
+                    <action name="Execute">
+                        <command>
+                            bl-text-editor ~/.config/dmenu/dmenu-bind.sh
+                        </command>
+                    </action>
+                </item>
+                <separator label="Help?"/>
+                <item label="man page">
+                    <action name="Execute">
+                        <command>
+                            x-terminal-emulator -T 'man dmenu' -e man dmenu
+                        </command>
+                    </action>
+                </item>
+            </menu>
+            <menu id="gmrunconfig" label="gmrun">
+                <item label="Edit Config File">
+                    <action name="Execute">
+                        <command>
+                            bl-text-editor ~/.gmrunrc
+                        </command>
+                    </action>
+                </item>
+                <separator label="Help?"/>
+                <item label="man page">
+                    <action name="Execute">
+                        <command>
+                            x-terminal-emulator -T 'man gmrun' -e man gmrun
+                        </command>
+                    </action>
+                </item>
+            </menu>
+            <menu id="DisplaySettings" label="Display">
+                <item label="ARandR Screen Layout Editor">
+                    <action name="Execute">
+                        <command>
+                            arandr
+                        </command>
+                    </action>
+                </item>
+                <separator label="Help?"/>
+                <item label="man xrandr">
+                    <action name="Execute">
+                        <command>
+                            x-terminal-emulator -T 'man xrandr' -e man xrandr
+                        </command>
+                    </action>
+                </item>
+            </menu>
+            <item label="Lenovo Wifi">
+                <action name="Execute">
+                    <command>
+                        /usr/bin/fuckin_wl
+                    </command>
+                </action>
+            </item>
+        </menu>
+        <menu id="system" label="System">
+            <menu execute="bl-printing-pipemenu" id="PrintingPipeMenu" label="Printers"/>
+            <item label="Synaptic Package Manager">
+                <action name="Execute">
+                    <command>
+                        gksudo synaptic
+                    </command>
+                </action>
+            </item>
+            <item label="File Manager as root">
+                <action name="Execute">
+                    <command>
+                        gksudo bl-file-manager
+                    </command>
+                </action>
+            </item>
+            <item label="Text Editor as root">
+                <action name="Execute">
+                    <command>
+                        gksudo bl-text-editor
+                    </command>
+                </action>
+            </item>
+            <item label="Login Settings">
+                <action name="Execute">
+                    <command>
+                        gksudo bl-text-editor /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm.conf
+                    </command>
+                </action>
+            </item>
+            <item label="GParted">
+                <action name="Execute">
+                    <command>
+                        gksudo gparted
+                    </command>
+                </action>
+            </item>
+            <item label="Edit Debian Alternatives">
+                <action name="Execute">
+                    <command>
+                        gksudo galternatives
+                    </command>
+                </action>
+            </item>
+            <separator/>
+            <item label="About Bunsen Alternatives">
+                <action name="Execute">
+                    <execute>zenity --text-info --title=&quot;About Bunsen Alternatives&quot; --filename=&quot;/usr/share/bunsen/bunsen-docs/helpfile-bl-alternatives.txt&quot; --width=900 --height=700</execute>
+                </action>
+            </item>
+        </menu>
+        <menu id="help" label="Help" execute="bl-help-pipemenu" />
+        <separator/>
+        <menu execute="bl-kb-pipemenu" id="keybinds" label="Display Keybinds"/>
+        <separator/>
+        <item label="Lock Screen">
+            <action name="Execute">
+                <command>
+                    bl-lock
+                </command>
+            </action>
+        </item>
+        <item label="Exit">
+            <action name="Execute">
+                <command>
+                    bl-exit
+                </command>
+            </action>
+        </item>
+    </menu>
+</openbox_menu>
