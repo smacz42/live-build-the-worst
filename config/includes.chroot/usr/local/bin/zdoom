@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /usr/opt/zdoom/zdoom "$@"
+exec /opt/zdoom/zdoom "$@"
