@@ -34,6 +34,6 @@ cd build || exit
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make
 
-cp ./* "${lb_pwd}/config/includes.chroot/opt/zdoom"
+cp ./zdoom* "${lb_pwd}/config/includes.chroot/opt/zdoom"
 
 cd "${lb_pwd}"
