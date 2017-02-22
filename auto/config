@@ -19,7 +19,7 @@ rsync -av --ignore-existing /usr/share/live/build/bootloaders/isolinux/ "${PWD}"
 rm -rf "${PWD}"/config/bootloaders/isolinux/splash.svg
 
 # Zdoom Installation
-sudo apt-get install build-essential zlib1g-dev libsdl2-dev libjpeg-dev \
+sudo apt-get install -y build-essential zlib1g-dev libsdl2-dev libjpeg-dev \
     nasm tar libbz2-dev libgtk-3-dev cmake git libfluidsynth-dev libgme-dev \
     libopenal-dev libmpg123-dev libsndfile1-dev timidity
 
