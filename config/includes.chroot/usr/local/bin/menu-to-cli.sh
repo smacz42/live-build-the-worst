@@ -9,7 +9,7 @@ OUTFILE="${HOME}/.tmuxinator/${CLI_PROGRAM}.yml"   # Name of the file to generat
 # -----------------------------------------------------------
 # 'Here document' containing the body of the config file
 # Generated only when one does not already exist
-if [[ -e ${OUTFILE} ]]; then
+if [[ ! -e ${OUTFILE} ]]; then
     # All space indented in the here document would be reflected in the
     # resulting file, therefore, indentation needs to be eliminated for that block
     (
