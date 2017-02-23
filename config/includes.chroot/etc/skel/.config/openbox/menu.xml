@@ -419,7 +419,7 @@
                     <item label="nmap">
                         <action name="Execute">
                             <command>
-                                menu-to-cli.sh nmap
+                                menu-to-cli.sh nmap -h
                             </command>
                         </action>
                     </item>
@@ -691,7 +691,7 @@
                     <item label="nmap">
                         <action name="Execute">
                             <command>
-                                menu-to-cli.sh nmap
+                                menu-to-cli.sh nmap -h
                             </command>
                         </action>
                     </item>
@@ -1043,7 +1043,7 @@
                     <item label="nmap">
                         <action name="Execute">
                             <command>
-                                menu-to-cli.sh nmap
+                                menu-to-cli.sh nmap -h
                             </command>
                         </action>
                     </item>

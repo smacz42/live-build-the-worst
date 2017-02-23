@@ -5,9 +5,8 @@ set -e
 lb_pwd="${PWD}"
 
 lb config noauto\
-    --distribution "testing"
     --archive-areas "main contrib non-free" \
-    --bootappend-live "boot=live hostname=the-worst username=ghost" \
+    --bootappend-live "boot=live hostname=the-worst username=ghost components quiet splash" \
     --iso-volume "the-worst" \
     --iso-publisher "smacz; https://hobbithole.blue; andrewcz@neomailbox.net" \
     --iso-application "the-worst" \
@@ -42,5 +41,4 @@ cd "${lb_pwd}"
 
 ### Sudoers file permission fix
 
-sudo chown root:root ${lb_pwd}/config/includes.chroot/etc/sudoers
-sudo chmod 0440 ${lb_pwd}/config/includes.chroot/etc/sudoers
+sudo chmod 0440 "${lb_pwd}/config/includes.chroot/etc/sudoers"
