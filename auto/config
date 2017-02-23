@@ -14,12 +14,13 @@ lb config noauto\
     --net-root-server "" \
     "${@}"
 
-# isolinux
+### isolinux
 rsync -av --ignore-existing /usr/share/live/build/bootloaders/isolinux/ "${PWD}"/config/bootloaders/isolinux
 
 rm -rf "${PWD}"/config/bootloaders/isolinux/splash.svg
 
-# Zdoom Installation
+### Zdoom Installation
+
 sudo apt-get install -y build-essential zlib1g-dev libsdl2-dev libjpeg-dev \
     nasm tar libbz2-dev libgtk-3-dev cmake git libfluidsynth-dev libgme-dev \
     libopenal-dev libmpg123-dev libsndfile1-dev timidity
@@ -38,3 +39,8 @@ make
 cp ./zdoom* "${lb_pwd}/config/includes.chroot/opt/zdoom"
 
 cd "${lb_pwd}"
+
+### Sudoers file permission fix
+
+sudo chown root:root ${lb_pwd}/config/includes.chroot/etc/sudoers
+sudo chmod 0440 ${lb_pwd}/config/includes.chroot/etc/sudoers

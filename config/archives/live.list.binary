@@ -1,0 +1,2 @@
+deb http://eddie.website/repository/apt stable main
+deb http://http.kali.org/kali kali-rolling main contrib non-free
